@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body,
+html {
+  background-color: var(--color-green-50);
+}
+
+.nav-logo {
+  height: 50px;
+  mix-blend-mode: multiply;
+}
+.btn {
+  @apply hover:text-green-900 cursor-pointer min-[1100px]:text-[18px];
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #064e3b;
+  border-radius: 10px;
+}
+
+.services {
+  position: relative;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
