@@ -13,7 +13,7 @@ const Marketplace = () => {
           <ProfileLeft/>
         </div>
 
-        <div className="flex-1 flex flex-col overflow-auto h-screen scrollbar-hide lg:right-[110px] relative">
+        <div className="flex-1 flex flex-col h-screen scrollbar-hide mx-auto mr-[20px] lg:right-[110px] relative">
           <SendPost />
           <Posts />
         </div>

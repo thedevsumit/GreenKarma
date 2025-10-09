@@ -71,9 +71,8 @@ const PostDetails = () => {
   return (
     <>
       <NavBar />
-      <div className="w-[1280px] mx-auto mt-30 flex gap-8 justify-center items-start">
-        {/* Left: Post Details */}
-        <div className="w-[600px] bg-white shadow-lg rounded-xl p-6">
+      <div className="lg:w-[1024px] mx-auto mt-30 lg:flex flex-col lg:flex-row gap-8 justify-center items-start">
+        <div className="w-[80vw] mx-auto lg:w-[600px] bg-white shadow-lg rounded-xl p-6">
           <h2 className="text-[20px] font-bold mb-3 text-[#699451] flex gap-[10px] justify-start items-center">
             <MdSubtitles className="mt-[3px]" />
             {post.title}
@@ -91,7 +90,7 @@ const PostDetails = () => {
         </div>
 
         <div className="flex-col">
-          <div className="w-[426px] bg-gray-50 shadow-md rounded-xl p-6 flex flex-col justify-between">
+          <div className="w-[80vw] mx-auto lg:w-[426px] mt-[50px] lg:mt-[0px] bg-gray-50 shadow-md rounded-xl p-6 flex flex-col justify-between">
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Seller Details
