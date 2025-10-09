@@ -14,7 +14,7 @@ const ProfileLeft = () => {
     fetchingMyListedItems,
   } = usePostStore();
   return (
-    <div className="w-[225px]  mt-[135px] fixed">
+    <div className="w-[225px]  mt-[135px] fixed hidden lg:block">
       <div className="w-[225px] relative pb-[20px] bg-white rounded-[10px]">
         <img
           src="bgprofle.png"

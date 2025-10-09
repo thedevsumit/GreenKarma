@@ -5,6 +5,9 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
+      <HeroSection />
+      <AboutUs />
+      <ServicesFeatures />
     </div>
   );
 };

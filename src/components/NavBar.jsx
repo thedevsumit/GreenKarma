@@ -22,33 +22,35 @@ const NavBar = () => {
           GreenKarma
         </div>
       </div>
-      <ul className="gap-8 font-medium hidden lg:flex">
-        <li
-          className="btn"
-          onClick={() => {
-            navigate("/homepage");
-          }}
-        >
-          Home
-        </li>
-        <li className="btn">About Us</li>
-        <li className="btn">How It Works</li>
-        <li
-          className="btn"
-          onClick={() => {
-            navigate("/market");
-          }}
-        >
-          Marketplace
-        </li>
-        <li className="btn">Impact</li>
-        <li className="btn">Blog / Resources</li>
-        <li className="btn">Contact Us</li>
-      </ul>
+      {authUser && (
+        <ul className="gap-8 font-medium hidden lg:flex">
+          <li
+            className="btn"
+            onClick={() => {
+              navigate("/homepage");
+            }}
+          >
+            Home
+          </li>
+          <li className="btn">About Us</li>
+          <li className="btn">How It Works</li>
+          <li
+            className="btn"
+            onClick={() => {
+              navigate("/market");
+            }}
+          >
+            Marketplace
+          </li>
+          <li className="btn">Impact</li>
+          <li className="btn">Blog / Resources</li>
+          <li className="btn">Contact Us</li>
+        </ul>
+      )}
       <div>
         {!authUser && (
           <button
-            className="cursor-pointer px-6 py-3 bg-[#699451] rounded-[12px] text-green-50"
+            className="cursor-pointer px-6 py-3 bg-[#699451] mr-[20px] rounded-[12px] text-green-50"
             onClick={() => navigate("/login")}
           >
             Get Started
@@ -70,9 +72,11 @@ const NavBar = () => {
             )}
           </div>
         )}
-        <div className="items-center gap-2 cursor-pointer flex lg:hidden">
-          <GiHamburgerMenu className="text-3xl text-[#699451] mr-[10px]" />
-        </div>
+        {authUser && (
+          <div className="items-center gap-2 cursor-pointer flex lg:hidden">
+            <GiHamburgerMenu className="text-3xl text-[#699451] mr-[10px]" />
+          </div>
+        )}
       </div>
     </div>
   );

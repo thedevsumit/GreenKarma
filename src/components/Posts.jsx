@@ -12,7 +12,7 @@ const Posts = () => {
   }, [fetchingData]);
 
   return (
-    <div className="w-[555px] mx-auto mt-8 space-y-6 relative top-30">
+    <div className="w-[80vw] lg:w-[555px] mx-auto mt-8 space-y-6 relative top-30">
       {fetchedData.length === 0 ? (
         <p className="text-center text-gray-500 italic">No posts yet</p>
       ) : (
@@ -47,7 +47,7 @@ const Posts = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-end gap-2">
+                  <div className="flex flex-col items-end gap-2 max-[390px]:hidden">
                     <div className="bg-[#699451] w-[100px] h-[40px] rounded-[10px] flex justify-center items-center text-white cursor-pointer">
                       {post.category}
                     </div>

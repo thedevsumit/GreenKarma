@@ -88,8 +88,8 @@ const SendPost = () => {
 
   return (
     <>
-      <div className="w-[555px] mx-auto space-y-6 relative top-33">
-        <div className="w-[555px] h-[86px] m-auto bg-white rounded-[15px] py-[10px]">
+      <div className="w-[80vw] lg:w-[555px] mx-auto space-y-6 relative top-33">
+        <div className="lg:w-[555px] h-[86px] m-auto bg-white rounded-[15px] py-[10px]">
           <div className="flex gap-[10px] p-[8px]">
             <div>
               {authUser.profilePic && authUser.profilePic.trim() !== "" ? (
@@ -105,7 +105,7 @@ const SendPost = () => {
               )}
             </div>
             <div
-              className="w-[467px] h-[48px] flex justify-start items-center border-gray-500 border-[0.1px] p-[14px] rounded-[30px] cursor-pointer"
+              className="w-[90%] lg:w-[467px] h-[48px] flex justify-start items-center border-gray-500 border-[0.1px] p-[14px] rounded-[30px] cursor-pointer"
               onClick={() => setStep(1)}
             >
               Create a Post
@@ -116,7 +116,7 @@ const SendPost = () => {
 
       {step > 0 && (
         <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-[744px] min-h-[241px] relative">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-[90vw] lg:w-[744px] min-h-[241px] relative">
             <div className="flex items-center gap-4 mb-4">
               {authUser.profilePic && authUser.profilePic.trim() !== "" ? (
                 <img

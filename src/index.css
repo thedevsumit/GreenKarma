@@ -10,7 +10,7 @@ html {
   mix-blend-mode: multiply;
 }
 .btn {
-  @apply hover:text-green-900 cursor-pointer min-[1100px]:text-[18px];
+  @apply hover:text-green-900 cursor-pointer min-[1170px]:text-[18px];
 }
 
 ::-webkit-scrollbar {

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="">
       {" "}
@@ -17,7 +19,10 @@ const HeroSection = () => {
               recyclers near you.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="bg-[#699451] cursor-pointer text-white px-6 py-3 rounded-lg shadow-lg transition">
+              <button
+                className="bg-[#699451] cursor-pointer text-white px-6 py-3 rounded-lg shadow-lg transition"
+                onClick={() => navigate("/market")}
+              >
                 Get Started
               </button>
               <button className="border cursor-pointer border-[#699451] text-[#699451] hover:bg-green-100 px-6 py-3 rounded-lg transition">
@@ -35,11 +40,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      <img
-        src="homepagefooter.png"
-        alt=""
-        className="mix-blend-multiply"
-      />
+      <img src="homepagefooter.png" alt="" className="mix-blend-multiply" />
     </div>
   );
 };
